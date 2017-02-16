@@ -4,6 +4,7 @@ Dynamic programming"""
 import unittest
 
 def file_reader(filename):
+    """Read triangle file into list of ints."""
     with open(filename) as f:
         tree = []
         for line in f.readlines():
@@ -12,6 +13,7 @@ def file_reader(filename):
         return tree
 
 def path_finder(tree):
+    """Find maximum sum through tree."""
     paths = []
     for row in tree:
         paths.append([0]*len(row))

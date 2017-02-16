@@ -18,6 +18,7 @@ months = {
 }
 
 def count_sundays():
+    """Count Sundays on first of the month in the 20th century."""
     y = 1
     m = 1
     d = 1
