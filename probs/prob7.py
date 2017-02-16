@@ -15,7 +15,7 @@ def nth_prime(n):
     return current
 
 
-class TestMultiples(unittest.TestCase):
+class TestNthPrime(unittest.TestCase):
     def test_nth_prime(self):
         self.assertEqual(nth_prime(1), 2)
         self.assertEqual(nth_prime(6), 13)

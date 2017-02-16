@@ -1,4 +1,4 @@
-"""Problem 8: ???"""
+"""Problem 8: Largest product in a series"""
 import unittest
 
 def max_adjacent(filename, n):
@@ -16,7 +16,7 @@ def max_adjacent(filename, n):
     return highest
 
 
-class TestMultiples(unittest.TestCase):
+class TestMaxAdjacent(unittest.TestCase):
     def test_max_adjacent(self):
         filename = "inputs/prob8.txt"
         self.assertEqual(max_adjacent(filename, 4), 5832)

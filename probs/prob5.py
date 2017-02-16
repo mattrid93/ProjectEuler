@@ -32,7 +32,7 @@ class TestMultiples(unittest.TestCase):
         self.assertEqual(greatest_common_divisor(1, 100), 1)
         self.assertEqual(greatest_common_divisor(24, 54), 6)
         self.assertEqual(greatest_common_divisor(48, 180), 12)
-
+        
     def test_lcm(self):
         self.assertEqual(lowest_common_multiple(1, 1), 1)
         self.assertEqual(lowest_common_multiple(1, 100), 100)

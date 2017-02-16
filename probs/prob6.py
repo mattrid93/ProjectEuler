@@ -10,7 +10,7 @@ def sum_square_difference(n):
     square_sum = sum([x for x in range(1, n+1)])**2
     return square_sum - sum_squares
 
-class TestMultiples(unittest.TestCase):
+class TestSSD(unittest.TestCase):
     def test_ssd(self):
         self.assertEqual(sum_square_difference(10), 2640)
 
