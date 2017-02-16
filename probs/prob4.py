@@ -1,4 +1,6 @@
-"""Problem 4: Largest palindrome product"""
+"""Problem 4: Largest palindrome product.
+
+Brute force check."""
 import unittest
 
 def is_palindrome(n):

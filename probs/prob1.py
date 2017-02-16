@@ -1,4 +1,6 @@
-"""Problem 1: Multiples of three and five."""
+"""Problem 1: Multiples of three and five.
+
+Easy to just perform sum."""
 import unittest
 
 def sum_multiples(n):

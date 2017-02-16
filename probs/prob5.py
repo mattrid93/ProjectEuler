@@ -1,4 +1,7 @@
-"""Problem 5: Smallest multiple"""
+"""Problem 5: Smallest multiple.
+
+Calculate using GCD method of finding LCM. Calculate GCD using Euclids
+method."""
 import unittest
 
 def greatest_common_divisor(a, b):

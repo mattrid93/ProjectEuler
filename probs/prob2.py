@@ -1,4 +1,6 @@
-"""Problem 2: Even Fibonacci numbers"""
+"""Problem 2: Even Fibonacci numbers.
+
+Easy to just perform sum."""
 import unittest
 
 def sum_even_fib_numbers(n):
