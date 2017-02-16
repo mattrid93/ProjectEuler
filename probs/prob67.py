@@ -1,4 +1,4 @@
-"""Problem 18: Maximum path sum I.
+"""Problem 67: Maximum path sum II.
 
 Dynamic programming"""
 import unittest
@@ -37,6 +37,6 @@ class TestFunctions(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    tree = file_reader("inputs/prob18.txt")
+    tree = file_reader("inputs/prob67.txt")
     print(path_finder(tree))
     unittest.main()
