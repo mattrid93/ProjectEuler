@@ -3,6 +3,7 @@
 Generate primes using Sieve of Erat"""
 import unittest
 from numpy import sqrt
+from utils.primes import seive_of_erat
 
 def sum_n_primes(n):
     """Returns sum of all primes below n"""
