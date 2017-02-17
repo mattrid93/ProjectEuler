@@ -27,6 +27,17 @@ def find_prime_factors(n):
             test += 1
     return p_factors
 
+def find_prime_factors_table(n):
+    """Returns prime factors and powers in table form"""
+    table = {}
+    for pf in find_prime_factors(n):
+        if pf in table:
+            table[pf] += 1
+        else:
+            table[pf] = 1
+    return table
+
+
 def seive_of_erat(n):
     """Generates all primes up to n using Seive of Erat"""
     marked = [1]*(n-1)
@@ -52,6 +63,12 @@ class TestPrimes(unittest.TestCase):
         self.assertEqual(find_prime_factors(2), [2])
         self.assertEqual(find_prime_factors(10), [2, 5])
         self.assertEqual(find_prime_factors(13195), [5, 7, 13, 29])
+
+    def test_prime_factors_table(self):
+        self.assertEqual(find_prime_factors_table(2), {2: 1})
+        self.assertEqual(find_prime_factors_table(10), {2: 1, 5: 1})
+        self.assertEqual(find_prime_factors_table(8), {2: 3})
+        self.assertEqual(find_prime_factors_table(1800), {2: 3, 3: 2, 5:2})
 
     def test_seive(self):
         self.assertEqual(seive_of_erat(2), [])

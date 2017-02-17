@@ -1,19 +1,6 @@
 """Problem 21: Amicable numbers."""
 import unittest
-from numpy import sqrt
-
-def find_proper_divisors(n):
-    """Finds proper divisors of n"""
-    if n == 1:
-        return []
-    divisors = [1]
-    i = 2
-    while i < sqrt(n):
-        if not n%i:
-            divisors.append(i)
-            divisors.append(n//i)
-        i += 1
-    return divisors
+from utils.factoring import find_proper_divisors
 
 def check_amicable(n):
     """Tests if n is an amicable number. If true, returns other half of pair."""
@@ -39,12 +26,6 @@ def sum_amicable_pairs(n):
 
 
 class TestFunction(unittest.TestCase):
-    def test_finder(self):
-        self.assertEqual(find_proper_divisors(1), [])
-        self.assertEqual(find_proper_divisors(2), [1])
-        for d in find_proper_divisors(220):
-            self.assertIn(d, [1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110])
-
     def test_checker(self):
         self.assertFalse(check_amicable(1))
         self.assertFalse(check_amicable(17))
