@@ -1,4 +1,4 @@
-"""Problem ?: ???"""
+"""Problem 42: Coded triangle numbers"""
 import unittest
 
 def gen_triangle_numbers(limit):
