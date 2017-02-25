@@ -1,22 +1,16 @@
-"""Problem 45: Goldbachs other conjecture."""
+"""Problem 45: Triangular, pentagonal and hexagonal"""
 import unittest
 from math import sqrt
-from utils.primes import seive_of_erat
 
 def solution():
-    limit = 10000
-    primes_list = set(seive_of_erat(limit))
-    n = 9
-    while n < limit:
-        if n not in primes_list:
-            primes_below = seive_of_erat(n)
-            conjecture_false = True
-            for p in primes_below:
-                if sqrt((n-p)/2).is_integer():
-                    conjecture_false = False
-            if conjecture_false:
-                return n
-        n += 2
+    n = 2
+    while n < 100000:
+        tri = (n * (n + 1)) // 2
+        P_n = 1/6 + sqrt(2*tri/3 + 1/36)
+        H_n = 1/4 + sqrt(tri/2 + 1/16)
+        if P_n.is_integer() and H_n.is_integer() and tri != 40755:
+            return tri
+        n += 1
 
 class TestFunction(unittest.TestCase):
     pass
