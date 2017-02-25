@@ -1,4 +1,4 @@
-"""Problem ?: ???"""
+"""Problem 41: Pandigital primes"""
 import unittest
 from prob24 import next_perm
 from utils.primes import is_prime
