@@ -1,4 +1,4 @@
-"""Problem ?: ???"""
+"""Problem 51: Prime digit replacements"""
 import unittest
 from utils.primes import seive_of_erat
 
