@@ -1,4 +1,4 @@
-"""Problem ?: ???"""
+"""Problem 54: Poker hands"""
 import unittest
 
 hand_types = {
